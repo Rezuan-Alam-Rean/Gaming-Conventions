@@ -6,7 +6,7 @@ import Gamecard from "./Gamecard";
 const Game = () => {
 
 
-    const [game, setGame] = useState({});
+  const [game, setGame] = useState({});
 
   const { id } = useParams();
 
@@ -14,21 +14,18 @@ const Game = () => {
 
   useEffect(() => {
 
-    
+
     const findgame = games?.find((game) => game.id === id);
 
     setGame(findgame);
   }, [id, games]);
 
 
-
-
-
-    return (
-        <div>
-            <Gamecard game={game}></Gamecard>
-        </div>
-    );
+  return (
+    <div>
+      <Gamecard game={game}></Gamecard>
+    </div>
+  );
 };
 
 export default Game;

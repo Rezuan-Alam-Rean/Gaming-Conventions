@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 import { AuthContext } from '../Provider/AuthProvider';
 import { useContext, useState } from 'react';
+import toast from 'react-hot-toast';
 
 
 
@@ -31,10 +32,10 @@ const Login = () => {
               navigate(from)
               form.reset();
            
-              setSuccess(" Login successfull");
+              toast.success(" Login successfull");
             })
             .catch((error) => {
-              setError(error.message);
+              toast.error(error.message);
             });
       }
   
@@ -70,15 +71,15 @@ const Login = () => {
                         <label className="label">
                             New here? <Link to="/register" className=" btn text-sm font-bold label-text-alt link link-hover"> Register</Link>
                         </label>
-                        <SocialLogin />
+                        <SocialLogin></SocialLogin>
                         <br/>
-                        <p className="text-primary">
+                        {/* <p className="text-primary">
         {success}
         </p>
       <br />
       <p className="text-danger ">
         {error}
-        </p>
+        </p> */}
                     </form>
                 </div>
             </div>

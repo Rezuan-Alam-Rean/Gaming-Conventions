@@ -2,6 +2,7 @@ import { Link, } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 import { useContext, useState } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
+import toast from 'react-hot-toast';
 
 
 const Register = () => {
@@ -35,7 +36,7 @@ const Register = () => {
             })
 
         if (password.length < 6) {
-            setError('Password must be at least 6 characters');
+            toast.error('Password must be at least 6 characters');
 
         }
 

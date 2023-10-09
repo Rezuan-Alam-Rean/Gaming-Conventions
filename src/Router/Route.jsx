@@ -6,6 +6,9 @@ import Login from "../Pages/Login";
 import Game from "../Pages/Game";
 import Register from "../Pages/Register";
 import PrivetRoutes from "./PrivetRoutes/PrivetRoutes";
+import ErrorPage from "../Pages/ErrorPage";
+import About from "../Pages/Proute/About";
+import Complain from "../Pages/Proute/Complain";
 
 
 
@@ -14,6 +17,8 @@ const myCreatedRoute =  createBrowserRouter([
 
         path : "/",
         element : <MainLayout></MainLayout>,
+        errorElement: <ErrorPage></ErrorPage>,
+
        
         children : [
             {
@@ -22,7 +27,7 @@ const myCreatedRoute =  createBrowserRouter([
                 loader : ()=> fetch('/games.json')
             },
             {
-                path : "/Allgames",
+                path : "/Logout",
                 element : <Allgames></Allgames>,
                
             },
@@ -41,6 +46,16 @@ const myCreatedRoute =  createBrowserRouter([
             {
                 path: 'register',
                 element: <Register />
+              },
+           
+            {
+                path: '/About',
+                element: <About></About>
+              },
+           
+            {
+                path: '/Complain',
+                element: <Complain></Complain>
               },
            
         ]

@@ -1,6 +1,7 @@
 import { GoogleAuthProvider, createUserWithEmailAndPassword, getAuth, onAuthStateChanged, signInWithEmailAndPassword, signInWithPopup , signOut, updateProfile,} from "firebase/auth";
 import { createContext, useEffect, useState } from "react";
 import { auth } from "../Hook/Firebase.config";
+import toast from "react-hot-toast";
 
 
 
@@ -46,7 +47,7 @@ const AuthProvider = ({ children  }) => {
          
         })
           .then(() => {
-            alert("Successfull");
+            toast.success("Registion Successfull");
           })
           .catch((error) => {
             console.log(error.message);
