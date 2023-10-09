@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+
 import Bennar from "../Components/Bennar";
 import Games from "../Components/Games";
 import useGetGames from "../Hook/useGetGames";

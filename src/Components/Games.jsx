@@ -1,5 +1,5 @@
 
-import useGetGames from "../Hook/useGetGames";
+
 import Gamescards from "./Gamescards";
 
 

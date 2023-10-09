@@ -3,7 +3,9 @@ import MainLayout from "../Layout/MainLayout";
 import Allgames from "../Pages/Allgames";
 import Home from "../Pages/Home";
 import Login from "../Pages/Login";
-import Details from "../Pages/Details";
+import Game from "../Pages/Game";
+import Register from "../Pages/Register";
+
 
 
 const myCreatedRoute =  createBrowserRouter([
@@ -24,9 +26,9 @@ const myCreatedRoute =  createBrowserRouter([
                
             },
             {
-                path : "/Details/:id",
-                element : <Details></Details>,
-                // loader:()=>fetch('/phones.json')
+                path : "/Game/:id",
+                element : <Game></Game>,
+                loader:()=>fetch('/games.json')
             },
 
 
@@ -34,6 +36,11 @@ const myCreatedRoute =  createBrowserRouter([
                 path : "/login",
                 element : <Login></Login>
             },
+
+            {
+                path: 'register',
+                element: <Register />
+              },
            
         ]
 
