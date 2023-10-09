@@ -17,7 +17,7 @@ const Dcard = ({ game }) => {
   
             <div >
               <Link to={`/Game/${id}`} state={game_name}>
-                <button className="btn btn-primary">Buy now</button>
+                <button className="btn btn-primary">Play now</button>
               </Link>
             </div>
   

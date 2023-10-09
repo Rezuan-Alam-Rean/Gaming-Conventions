@@ -32,7 +32,7 @@ const Register = () => {
                 navigate(form)
 
                 const loggedUser = result.user;
-                console.log(loggedUser);
+                
                 updateUserData(result.user, name)
                 form.reset()
                 toast.success('Account has been created successfully')
