@@ -44,8 +44,8 @@ const myCreatedRoute =  createBrowserRouter([
             },
 
             {
-                path: 'register',
-                element: <Register />
+                path: '/register',
+                element: <Register></Register>
               },
            
             {

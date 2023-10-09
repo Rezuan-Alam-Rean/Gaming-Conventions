@@ -1,4 +1,4 @@
-import { Link, } from 'react-router-dom';
+import { Link, useLocation, useNavigate, } from 'react-router-dom';
 import SocialLogin from './SocialLogin';
 import { useContext, useState } from 'react';
 import { AuthContext } from '../Provider/AuthProvider';
@@ -6,6 +6,10 @@ import toast from 'react-hot-toast';
 
 
 const Register = () => {
+    const location = useLocation();
+    // console.log(location);
+    const navigate = useNavigate()
+    let form = location.state?.from?.pathname || "/";
 
     const { createUser ,updateUserData} = useContext(AuthContext);
     const [success, setSuccess] = useState("");
@@ -25,21 +29,26 @@ const Register = () => {
         console.log(name);
         createUser(email, password)
             .then(result => {
+                navigate(form)
+
                 const loggedUser = result.user;
                 console.log(loggedUser);
                 updateUserData(result.user, name)
                 form.reset()
-                setSuccess('Account has been created successfully')
+                toast.success('Account has been created successfully')
             })
             .catch(error => {
-                setError(error.message)
+                
             })
 
-        if (password.length < 6) {
-            toast.error('Password must be at least 6 characters');
-
-        }
-
+            if (
+                password.length < 6 ||
+                !/[A-Z]/.test(password) ||
+                !/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)
+              ) {
+                toast.error('Password must be at least 6 characters, contain a capital letter, and have a special character');
+              }
+              
     };
 
 
