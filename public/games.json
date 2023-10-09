@@ -1,0 +1,65 @@
+[
+    {
+        "id": "1",
+        "game_image": "https://i.ibb.co/vxvxgYK/pubg.png",
+        "game_name": "PUBG",
+        "game_details": "PlayerUnknown's Battlegrounds is an online multiplayer battle royale game where players fight to be the last one standing.",
+        "prize": 1000
+    },
+    {
+        "id": "2",
+        "game_image": "https://i.ibb.co/khntnGD/images.jpg",
+        "game_name": "PES",
+        "game_details": "Pro Evolution Soccer is a popular football (soccer) video game series known for its realistic gameplay and graphics.",
+        "prize": 800
+    },
+    {
+        "id": "3",
+        "game_image": "https://i.ibb.co/3sRRR3j/cricket.jpg",
+        "game_name": "Cricket",
+        "game_details": "Cricket is a bat-and-ball game played between two teams. It's known for its various formats, including Test, One Day, and T20.",
+        "prize": 1200
+    },
+    {
+        "id": "4",
+        "game_image": "https://i.ibb.co/vs4rgwZ/clash.png",
+        "game_name": "Clash of Clans",
+        "game_details": "Clash of Clans is a strategy-based mobile game where you build and upgrade your village, train troops, and attack other players.",
+        "prize": 500
+    },
+    {
+        "id": "5",
+        "game_image": "https://i.ibb.co/chzfyhn/Neymer.jpg",
+        "game_name": "Football",
+        "game_details": "Football, also known as soccer, is a team sport played with a spherical ball. It's the most popular sport globally.",
+        "prize": 1500
+    },
+    {
+        "id": "6",
+        "game_image": "https://i.ibb.co/hDtFCG0/chess-game.jpg",
+        "game_name": "Chess",
+        "game_details": "Chess is a two-player strategy board game played on a chessboard. It requires skill, tactics, and strategic thinking.",
+        "prize": 600
+    },
+    {
+        "id": "7",
+        "game_image": "https://i.ibb.co/0f8qttx/Tennis.jpg",
+        "game_name": "Tennis",
+        "game_details": "Tennis is a racket sport played individually or in doubles. It's known for its fast-paced action and precise shots.",
+        "prize": 900
+    },
+    {
+        "id": "8",
+        "game_image": "https://i.ibb.co/yQnNwYF/basketball.jpg",
+        "game_name": "Basketball",
+        "game_details": "Basketball is a team sport played with a round ball and hoop. It's famous for its high-scoring games and slam dunks.",
+        "prize": 1100
+    },
+    {
+        "id": "9",
+        "game_image": "https://i.ibb.co/L1c3Pfs/H2x1-NSwitch-Minecraft-image1280w.jpg",
+        "game_name": "Minecraft",
+        "game_details": "Minecraft is a sandbox game where players can build, explore, and survive in a blocky, open-world environment.",
+        "prize": 750
+    }
+]
