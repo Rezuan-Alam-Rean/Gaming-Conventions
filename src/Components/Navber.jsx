@@ -31,7 +31,7 @@ const Navbar = () => {
 
         <img className="h-16 w-36" src={logo} alt="" />
 
-        <ul className="flex gap-5">
+        <ul className=" gap-5 flex ">
           <li>
             <NavLink
               to="/"
@@ -56,12 +56,12 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink
-              to="/Complain"
+              to="/Upcomming"
               className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "text-green-400  btn" : "btn"
               }
             >
-              Complain
+              Upcomming
             </NavLink>
 
           </li>

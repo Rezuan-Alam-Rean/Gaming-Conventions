@@ -9,7 +9,7 @@ const Bennar = () => {
 
       <div className="hero p-16 justify-center  bg-base-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <img src="https://i.ibb.co/k30qrmf/capsule-616x353.jpg" className="max-w-sm md:max-w-lg md:h-96 rounded-lg shadow-2xl" />
+          <div data-aos="flip-right"><img src="https://i.ibb.co/k30qrmf/capsule-616x353.jpg" className="max-w-sm md:max-w-lg md:h-96 rounded-lg shadow-2xl" /></div>
           <div>
             <h1 className=" text-5xl font-bold mb-5"><span className="text-orange-600 ">30% off</span> in Some games</h1>
             <h2 className="text-3xl font-bold">Gaming Conventions!</h2>
