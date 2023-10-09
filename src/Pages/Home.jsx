@@ -1,6 +1,7 @@
 
 import Bennar from "../Components/Bennar";
 import Games from "../Components/Games";
+import Hero from "../Components/Hero";
 import useGetGames from "../Hook/useGetGames";
 
 
@@ -12,8 +13,11 @@ const Home = () => {
    
     return (
         <div>
+            
             <Bennar></Bennar>
             <Games games={games} >  </Games>
+
+            <Hero></Hero>
         </div>
     );
 };
