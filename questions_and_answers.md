@@ -123,7 +123,7 @@ console.log(count);
 <details><summary><b>Answer</b></summary>
 <p>
 
-#### Answer: ?
+#### Answer: - C: 3
 
 <i>The answer is C: 3 because the variable count is only incremented three times in the forEach() function.</i>
 
