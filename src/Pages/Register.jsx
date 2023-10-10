@@ -26,6 +26,16 @@ const Register = () => {
         const password = event.target.password.value;
         console.log(password);
         const name = event.target.name.value;
+        if (
+            password.length < 6 ||
+            !/[A-Z]/.test(password) ||
+            !/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)
+          ) {
+            toast.error('Password must be at least 6 characters, contain a capital letter, and have a special character');
+          }
+
+          else{
+                
         console.log(name);
         createUser(email, password)
             .then(result => {
@@ -38,17 +48,13 @@ const Register = () => {
                 toast.success('Account has been created successfully')
             })
             .catch(error => {
-                
+                console.log(error);
             })
 
-            if (
-                password.length < 6 ||
-                !/[A-Z]/.test(password) ||
-                !/[!@#$%^&*()_+{}\[\]:;<>,.?~\\-]/.test(password)
-              ) {
-                toast.error('Password must be at least 6 characters, contain a capital letter, and have a special character');
-              }
+            
               
+
+          }
     };
 
 
